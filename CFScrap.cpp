@@ -1,4 +1,8 @@
+#ifdef _MSC_VER
+#include<__msvc_all_public_headers.hpp>
+#else
 #include<bits/stdc++.h>
+#endif
 #include<windows.h>
 using namespace std;
 struct JsonParser{
@@ -65,7 +69,7 @@ struct CodeforcesSubmissionAPI{
 	string url;
 	int scanner;
 	int fetch(string user,int start,int count){
-		url="https://codeforces.com/api/user.status?handle="+user+"&from="+inttostr(start)+"&count="+inttostr(count);
+		url="https://codeforc.es/api/user.status?handle="+user+"&from="+inttostr(start)+"&count="+inttostr(count);
 		cout<<("curl \""+url+"\" -o apitemp"+user+".txt")<<endl;
 		int val=system(("curl \""+url+"\" -o apitemp"+user+".txt").data()); 
 		ifstream fin(("apitemp"+user+".txt").data());
@@ -157,7 +161,7 @@ int main(){
 	cin.tie(NULL);
 	cout.tie(NULL);
 	while(1){
-		scrap("[YOUR_USERNAME]");
+		scrap("[YOUR HANDLE]");
 		Sleep(2000);
 	}
 	return 0;
