@@ -69,7 +69,7 @@ struct CodeforcesSubmissionAPI{
 	string url;
 	int scanner;
 	int fetch(string user,int start,int count){
-		url="https://codeforc.es/api/user.status?handle="+user+"&from="+inttostr(start)+"&count="+inttostr(count);
+		url="https://codeforces.com/api/user.status?handle="+user+"&from="+inttostr(start)+"&count="+inttostr(count);
 		cout<<("curl \""+url+"\" -o apitemp"+user+".txt")<<endl;
 		int val=system(("curl \""+url+"\" -o apitemp"+user+".txt").data()); 
 		ifstream fin(("apitemp"+user+".txt").data());
