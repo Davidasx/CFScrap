@@ -1,4 +1,5 @@
 ### CFScrap -- Notes your submissions on Codeforces!
-Edit line 160 of CFScrap.cpp.
-Compile & run popup.cpp and cfscrap.cpp.
+Edit line 164 of CFScrap.cpp.
+Compile popup.cpp.
+COmpile-run CFScrap.cpp.
 All done!
