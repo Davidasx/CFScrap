@@ -6,6 +6,6 @@ Set have_sound at line 13 of popup.cpp to false if you don't want sound support.
 
 Compile popup.cpp.
 
-COmpile-run CFScrap.cpp.
+Compile-run CFScrap.cpp.
 
 All done!
