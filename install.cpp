@@ -57,7 +57,7 @@ int main(){
 	tot+=system("g++ cfscrap_new.cpp -o cfscrap");
 	if(tot){
 		cout<<"Compile failed. It's PROBABLY your compiler's problem."<<endl;
-		cout<<"It's suggested that you install latest TDM-GCC compiler at "<<endl;
+		cout<<"It's suggested that you install latest TDM-GCC compiler at https://jmeubank.github.io/tdm-gcc/"<<endl;
 		system("pause");
 		return 1;
 	}
