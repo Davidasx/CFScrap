@@ -68,8 +68,7 @@ struct CodeforcesSubmissionAPI{
 	int scanner;
 	int fetch(string user,int start,int count){
 		url=codeforces+"/api/user.status?handle="+user+"&from="+inttostr(start)+"&count="+inttostr(count);
-		cout<<("curl \""+url+"\" -o apitemp"+user+".txt")<<endl;
-		int val=system(("curl \""+url+"\" -o apitemp"+user+".txt").data()); 
+		int val=system(("curl \""+url+"\" -o apitemp"+user+".txt -s").data()); 
 		ifstream fin(("apitemp"+user+".txt").data());
 		string tmp,js="";
 		while(getline(fin,tmp)) js+=tmp;
