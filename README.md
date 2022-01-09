@@ -1,14 +1,11 @@
-### CFScrap -- Notes your submissions on Codeforces!
-**If you are using G++ compiler, REMEMBER to add -lwinmm in your compiler arguments when compiling popup.cpp!**
+### CFScrap:Notify your submissions!(for Windows)
+
+**Required: G++ Compiler**
 
 Clone this repository.
 
-Edit line 164 of CFScrap.cpp.
+Compile and run install.cpp.
 
-Set have_sound at line 13 of popup.cpp to false if you don't want sound support.
-
-Compile popup.cpp.
-
-Compile-run CFScrap.cpp.
+Follow instructions and install..
 
 All done!
